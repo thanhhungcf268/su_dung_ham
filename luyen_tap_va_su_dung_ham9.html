@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phương trình bậc 2</title>
+</head>
+<body onload="numbers()">
+<form>
+    <input id="1" type="text">
+</form>
+<script type="text/javascript">
+    function numbers() {
+        document.getElementById("1").addEventListener('keypress', moveSelection);
+    }
+    function moveSelection(e) {
+        if (e.keyCode < 48 || e.keyCode > 58){
+            alert("false")
+        }else alert("true")
+    }
+</script>
+</body>
+</html>
