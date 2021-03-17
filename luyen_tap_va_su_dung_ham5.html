@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="addNumbers()">
+<form>
+    <p id="1"></p>
+    <p id="2"></p>
+</form>
+
+<script>
+    let newarray = ['Polaris', 'Aldebaran', 'Deneb',' Vega', 'Altair', 'Dubhe','Regulus']
+    let array = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major','Leo']
+
+    function addNumbers() {
+            let x = prompt("Nhập từ =")
+            let k = newarray.indexOf(x)
+            if (k <= newarray.length && k >= 0){
+                document.getElementById("1").innerHTML = newarray[k]
+                document.getElementById("2").innerHTML = array[k]
+            }else {
+                alert("từ đó không tồn tại")
+            }
+    }
+</script>
+</body>
+</html>
